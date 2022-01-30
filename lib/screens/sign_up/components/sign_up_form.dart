@@ -4,7 +4,7 @@ import 'package:shop_app/components/default_button.dart';
 import 'package:shop_app/components/form_error.dart';
 import 'package:shop_app/screens/complete_profile/complete_profile_screen.dart';
 
-import '../../../constants.dart';
+import '../../../config.dart';
 import '../../../size_config.dart';
 
 

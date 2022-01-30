@@ -48,3 +48,13 @@ OutlineInputBorder outlineInputBorder() {
     borderSide: BorderSide(color: kTextColor),
   );
 }
+
+Map? uriArguments; // to access url arguments for the web version
+
+///
+/// Backend Services
+///
+
+/// URI to backend service for box_op
+const String boxOpBKServiceURI =
+    'https://rq3fxg97w7.execute-api.eu-north-1.amazonaws.com/default/smartboxOp';
