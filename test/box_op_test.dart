@@ -60,6 +60,7 @@ void main() {
       expect(resBox.boxID, testID);
       expect(resBox.boxName, 'TestBox2');
       expect(resBox.asset!.assetName, "TestAsset2");
+      expect(resBox.asset!.assetDescription, "Description_for_TestAsset2");
       expect(resBox.asset!.owner, null);
     });
 

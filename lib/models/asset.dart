@@ -10,6 +10,7 @@ class Asset {
   final Uuid assetID;
   final Person? owner;
   final String? assetName;
+  final String? assetDescription;
   //final List<String> images;
   final double? price;
 
@@ -19,6 +20,7 @@ class Asset {
     this.owner,
     this.price,
     this.assetName,
+    this.assetDescription,
   });
 
   @override

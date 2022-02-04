@@ -52,6 +52,7 @@ Future<Box> queryBox(Uuid requestedBoxID) async {
         final asset = Asset(
           assetID: Uuid.parse(result["assetID"]),
           assetName: result["assetName"],
+          assetDescription: result["assetDescription"],
           price: double.parse(result["price"]),
         );
         return Box(
@@ -70,6 +71,7 @@ Future<Box> queryBox(Uuid requestedBoxID) async {
           assetID: Uuid.parse(result["assetID"]),
           owner: owner,
           assetName: result["assetName"],
+          assetDescription: result["assetDescription"],
           price: double.parse(result["price"]),
         );
         return Box(

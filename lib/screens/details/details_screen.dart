@@ -1,9 +1,20 @@
-import 'package:flutter/material.dart';
+///
+/// This Screen Shows a specific asset in more details so user can do actions
+/// for example buying it
+///
+///
 
+import 'package:flutter/material.dart';
 import '../../models/Product.dart';
 import 'components/body.dart';
 import 'components/custom_app_bar.dart';
 
+///
+/// To present details about an asset
+///
+/// Note: in case of routing to this screen you should send product to be presented,
+/// as an argument
+///
 class DetailsScreen extends StatelessWidget {
   static String routeName = "/details";
 

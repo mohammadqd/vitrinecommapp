@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shop_app/models/asset.dart';
 
 class Product {
   final int id;
@@ -19,6 +20,26 @@ class Product {
     required this.price,
     required this.description,
   });
+
+  Product.fromAsset(Asset asset)
+      : this(
+          id: 1,
+          images: [
+            "assets/images/ps4_console_white_1.png",
+            "assets/images/ps4_console_white_2.png",
+            "assets/images/ps4_console_white_3.png",
+            "assets/images/ps4_console_white_4.png",
+          ],
+          colors: [
+            Colors.white,
+          ],
+          title: asset.assetName ?? "No Name",
+          price: asset.price ?? 0,
+          description: asset.assetDescription ?? "No Description",
+          rating: 5,
+          isFavourite: false,
+          isPopular: false,
+        );
 }
 
 // Our demo Products
