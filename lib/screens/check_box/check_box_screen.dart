@@ -7,7 +7,7 @@ import 'components/body.dart';
 ///
 class CheckBoxScreen extends StatelessWidget {
   static String routeName = "/check_box";
-  final String? boxID = uriArguments!["boxid"];
+  final String? boxID = uriArguments!["boxID"];
 
   @override
   Widget build(BuildContext context) {

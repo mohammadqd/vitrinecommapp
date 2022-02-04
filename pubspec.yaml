@@ -33,6 +33,7 @@ dependencies:
   uuid_type: ^2.0.0
   http: ^0.13.4
   html: ^0.15.0
+  dartdoc: ^4.1.0
 
 dev_dependencies:
   flutter_test:

@@ -10,7 +10,7 @@ import 'config.dart';
 void main() {
   uriArguments = Uri.base.queryParameters; // save uri arguments in the globals
   final String? boxID =
-      Uri.base.queryParameters["boxid"]; //get parameter with attribute "boxID"
+      Uri.base.queryParameters["boxID"]; //get parameter with attribute "boxID"
 
   runApp(MyApp(boxID: boxID));
   //runApp(MyApp());

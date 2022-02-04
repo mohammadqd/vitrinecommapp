@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shop_app/models/asset.dart';
+import 'package:uuid_type/uuid_type.dart';
 
 class Product {
   final int id;
@@ -8,6 +9,7 @@ class Product {
   final List<Color> colors;
   final double rating, price;
   final bool isFavourite, isPopular;
+  final Uuid? containerBoxID;
 
   Product({
     required this.id,
@@ -16,12 +18,13 @@ class Product {
     this.rating = 0.0,
     this.isFavourite = false,
     this.isPopular = false,
+    this.containerBoxID = null,
     required this.title,
     required this.price,
     required this.description,
   });
 
-  Product.fromAsset(Asset asset)
+  Product.fromAsset(Asset asset, Uuid containigBoxID)
       : this(
           id: 1,
           images: [
@@ -39,6 +42,7 @@ class Product {
           rating: 5,
           isFavourite: false,
           isPopular: false,
+          containerBoxID: containigBoxID,
         );
 }
 

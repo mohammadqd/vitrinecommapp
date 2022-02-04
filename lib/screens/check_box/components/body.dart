@@ -27,8 +27,8 @@ class Body extends StatelessWidget {
           context,
           DetailsScreen.routeName,
           arguments: ProductDetailsArguments(
-              product:
-                  Product.fromAsset(value.asset ?? Asset(assetID: Uuid.nil))),
+              product: Product.fromAsset(
+                  value.asset ?? Asset(assetID: Uuid.nil), boxUuid)),
         );
       }).onError((error, stackTrace) {
         log('Error in retrieving a box: $error');
